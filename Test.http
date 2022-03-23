@@ -1,0 +1,87 @@
+POST http://localhost:8080/auth/signup
+Content-Type: application/json
+
+{
+  "memberID": "test",
+  "password": "1q2w3e4r"
+}
+
+###
+POST http://localhost:8080/auth/login
+Content-Type: application/json
+
+{
+  "memberID": "test",
+  "password": "1q2w3e4r"
+}
+
+###
+GET http://localhost:8080/member/me
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY0ODA0ODk1M30.FBz4SJF8-AWpnhIjkYSWqPAveIWQr8n1GXyILTI0zCZrPjfvgrCP4dF5aufsvDvFNtRRaCz29vWo0e9q13BkEw
+
+###
+POST http://localhost:8080/member/leave
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY0ODAyMzM3N30.jMPyQq5Lg5rn24_x71gl5GznGybHkVxWQrzW0jokFPE5NMQysAvsc8gFdvBSO43Bu8wLqFIooKRXinwDs_XUQA
+
+
+
+###
+POST http://localhost:8080/member/insertTODO
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY0ODA0OTA5MH0.tRaW89kvZzC3FEchA0DM7brmHq3ysPW5G7ce5yyOL_ciHQhqsY5htBfzTJpajC8oa8ZcpiATuR9EuIpFq-HZeA
+Content-Type: application/json
+
+{
+  "todoStatus": "Proceeding",
+  "content": "work"
+}
+
+###
+POST http://localhost:8080/member/insertTODO
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY0ODA0OTA5MH0.tRaW89kvZzC3FEchA0DM7brmHq3ysPW5G7ce5yyOL_ciHQhqsY5htBfzTJpajC8oa8ZcpiATuR9EuIpFq-HZeA
+Content-Type: application/json
+
+{
+  "todoStatus": "Proceeding",
+  "content": "work_second"
+}
+
+###
+POST http://localhost:8080/member/insertTODO
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY0ODA0OTA5MH0.tRaW89kvZzC3FEchA0DM7brmHq3ysPW5G7ce5yyOL_ciHQhqsY5htBfzTJpajC8oa8ZcpiATuR9EuIpFq-HZeA
+Content-Type: application/json
+
+{
+  "todoStatus": "Proceeding",
+  "content": "work_demo"
+}
+
+###
+POST http://localhost:8080/member/modifyTODO
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY0ODA0ODk1M30.FBz4SJF8-AWpnhIjkYSWqPAveIWQr8n1GXyILTI0zCZrPjfvgrCP4dF5aufsvDvFNtRRaCz29vWo0e9q13BkEw
+Content-Type: application/json
+
+{
+  "id": 1,
+  "todoStatus": "Proceeding"
+}
+
+###
+POST http://localhost:8080/member/getTODOList
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY0ODA0ODk1M30.FBz4SJF8-AWpnhIjkYSWqPAveIWQr8n1GXyILTI0zCZrPjfvgrCP4dF5aufsvDvFNtRRaCz29vWo0e9q13BkEw
+Content-Type: application/json
+
+{
+  "option": "list"
+}
+
+###
+POST http://localhost:8080/member/getTODOList
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJ0ZXN0IiwiYXV0aCI6IlJPTEVfVVNFUiIsImV4cCI6MTY0ODA0ODk1M30.FBz4SJF8-AWpnhIjkYSWqPAveIWQr8n1GXyILTI0zCZrPjfvgrCP4dF5aufsvDvFNtRRaCz29vWo0e9q13BkEw
+Content-Type: application/json
+
+{
+  "option": "Lately"
+}
+
+
+
